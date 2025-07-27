@@ -1,0 +1,304 @@
+ body {
+      margin: 0;
+      font-family: Tahoma, Verdana, Arial, sans-serif;
+    }
+    .top-bar {
+      background: #f4f4f4;
+      padding: 5px 20px;
+      font-size: 12px;
+      text-align: left;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: white;
+      border-bottom: 1px solid #ccc;
+    }
+    .navbar .left {
+      display: flex;
+      align-items: center;
+    }
+    .navbar img {
+      height: 50px;
+      margin-right: 10px;
+    }
+    .navbar .menu a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    .navbar .right {
+      display: flex;
+      align-items: center;
+    }
+    .navbar .right input[type="text"] {
+      padding: 5px;
+    }
+    .internet-banking {
+      background: #4B007D;
+      color: white;
+      padding: 10px 15px;
+      font-weight: bold;
+      border-radius: 3px;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+    .hero {
+      background-image: url('https://media.glassdoor.com/l/eb/80/1f/d8/mbl-head-office.jpg'); /* Placeholder image */
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .hero-content h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+    .hero-content p {
+      font-size: 18px;
+    }
+    .share-bar {
+      text-align: center;
+      padding: 10px;
+      background: #f9f9f9;
+    }
+    .share-bar span {
+      font-size: 14px;
+    }
+    .social-icons img {
+      height: 24px;
+      margin: 0 5px;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: #eee;
+    }
+    
+
+    .meezan-gpt { 
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #4B007D;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      color: #4B007D;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      font-size: 14px;
+      color: #333;
+      max-width: 700px;
+      margin: 0 auto 20px auto;
+    }
+
+    .banking-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .banking-image img {
+      width: 300px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .banking-text {
+      max-width: 400px;
+      text-align: left;
+    }
+
+    .buttons {
+      margin-top: 15px;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      padding: 10px 20px;
+      margin-right: 10px;
+      border-radius: 3px;
+      font-weight: bold;
+    }
+
+    .login-btn {
+      background: #FFD700;
+      color: #000;
+    }
+
+    .register-btn {
+      background: #eae6e6;
+      color: #4B007D;
+      border: 1px solid #ccc;
+    }
+
+    .keenu-logo {
+  white-space: nowrap; /* prevents line break */
+  margin-top: 10px;
+  width: 100px;
+  overflow: hidden;
+  font-weight: bold;
+  color: black;
+
+}
+
+    
+
+    .benefits {
+      background: #f5f5f5;
+      margin-top: 30px;
+      padding: 20px 0;
+    }
+
+    .benefits h3 {
+      color: #4B007D;
+      margin-bottom: 20px;
+    }
+
+    .benefit-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .benefit-item {
+      width: 150px;
+      text-align: center;
+    }
+
+    .benefit-item img {
+      width: 40px;
+      margin-bottom: 10px;
+    }
+
+    .benefit-item p {
+      margin: 5px 0;
+      font-weight: bold;
+      color: #4B007D;
+    }
+
+    .benefit-item a {
+      font-size: 12px;
+      color: #4B007D;
+      text-decoration: underline;
+    }
+
+    .urdu-btn {
+      position: fixed;
+      bottom: 80px;
+      left: 20px;
+      background: #4B007D;
+      color: white;
+      padding: 8px 10px;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    /* Existing styles remain unchanged */
+
+/* Add responsive design */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .menu a {
+    display: block;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 30px 20px;
+    flex-direction: column;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .banking-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .banking-text {
+    text-align: center;
+  }
+
+  .buttons a {
+    display: block;
+    margin: 10px auto;
+  }
+
+  .benefit-items {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-bar, .navbar, .footer, .section {
+    padding: 10px;
+  }
+
+  .navbar img {
+    height: 40px;
+  }
+
+  .benefit-item {
+    width: 100%;
+  }
+
+  .benefit-item img {
+    width: 30px;
+  }
+
+  .btn, .login-btn, .register-btn {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+
