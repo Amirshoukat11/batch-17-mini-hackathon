@@ -47,7 +47,7 @@
       margin-left: 10px;
     }
     .hero {
-      background-image: url('https://media.glassdoor.com/l/eb/80/1f/d8/mbl-head-office.jpg'); /* Placeholder image */
+      background-image: url('https://media.glassdoor.com/l/eb/80/1f/d8/mbl-head-office.jpg'); 
       background-size: cover;
       background-position: center;
       height: 400px;
@@ -78,6 +78,7 @@
       margin: 0 5px;
       vertical-align: middle;
       cursor: pointer;
+      padding: 10px;
     }
     .footer {
       display: flex;
@@ -160,7 +161,7 @@
     }
 
     .keenu-logo {
-  white-space: nowrap; /* prevents line break */
+  white-space: nowrap; 
   margin-top: 10px;
   width: 100px;
   overflow: hidden;
@@ -180,6 +181,7 @@
     .benefits h3 {
       color: #4B007D;
       margin-bottom: 20px;
+      text-align: center;
     }
 
     .benefit-items {
@@ -203,6 +205,7 @@
       margin: 5px 0;
       font-weight: bold;
       color: #4B007D;
+      align-items: center;
     }
 
     .benefit-item a {
@@ -221,6 +224,130 @@
       border-radius: 5px;
       font-size: 14px;
     }
+.icon-section {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  background-color: #f6f4f2;
+  padding: 40px 20px;
+  gap: 30px;
+  
+}
+
+
+.icon-box {
+  text-align: center;
+  color: #660066;
+  width: 140px;
+}
+
+.icon-box i {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.icon-box h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.icon-box a {
+  text-decoration: underline;
+  color: #660066;
+  font-size: 14px;
+}
+
+
+#menu-toggle {
+  display: none;
+}
+
+
+.menu-icon {
+  display: inline-block;
+  background: #660066;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
+#toggle {
+  display: none;
+}
+
+/* ✅ Toggle Button Style */
+.menu-btn {
+  display: inline-block;
+  background-color: #660066;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* ✅ Sidebar Style */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 250px;
+  height: 100vh;
+  background-color: #f9f9f9;
+  border-right: 1px solid #eee;
+  transition: left 0.3s ease;
+  padding-top: 60px;
+  z-index: 999;
+}
+
+/* ✅ Show sidebar when checked */
+#toggle:checked ~ .sidebar {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  border-bottom: 1px solid #ddd;
+}
+
+.sidebar ul li a {
+  display: block;
+  padding: 14px 20px;
+  color: #660066;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.sidebar ul li a:hover {
+  background-color: #f0e6f6;
+}
+
+/* ✅ Responsive for Mobile */
+@media (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .icon-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon-box {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+
 
     /* Existing styles remain unchanged */
 
@@ -300,5 +427,7 @@
     padding: 8px 12px;
   }
 }
+
+
 
 
